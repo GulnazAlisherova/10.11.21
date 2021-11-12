@@ -4,14 +4,24 @@ div {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50px;
-  height: 50px;
   margin-left: -25px;
   margin-top: -25px;
 
-  animation: 6s initial color-shift ;
-  animation-duration: 6s;
-  animation-name: initial;
+  animation-name: move-sideways;
+  animation-duration: 3s, 4s, 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s, 4s, 6s;
   animation-timing-function: ease-in-out;
-
+}
+@keyframes color-shift {
+  
+}
+@keyframes move-sideways {
+  0% {
+    left: 25%;
+  }
+  100% {
+    left: 75%;
+  }
 }
