@@ -1,35 +1,97 @@
+body{
+  background-image: url(./1579418974_1-2\ \(1\).jpg);
 
+}
 div {
-
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -25px;
-  margin-top: -25px;
+  top: 30%;
+  left: 30%;
+  margin-left: -15px;
+  margin-top: -15px;
 
   animation-name:color-shift, move-sideways ;
-  animation-duration: 3s, 4s, 5s;
+  animation-duration: 3s, 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-delay: 2s, 4s, 6s;
-  animation-timing-function: ease-in-out;
+  animation-delay: 2s, 0s;
+  animation-timing-function: linear;
 }
 @keyframes color-shift {
   0%{
-   color: turquoise;
+   color: rgb(28, 0, 153);
   }
   50% {
     color: black;
   }
   100% {
-    color: red;
+    color: rgb(255, 251, 23);
   }
 }
 @keyframes move-sideways {
   0% {
+    left: 75%;
+  }
+  50% {
     left: 25%;
   }
   100% {
     left: 75%;
   }
+}
+span{
+  font-weight: 900;
+  animation-name:color-shifft, move-sideways ;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s, ;
+  animation-timing-function: ease-in-out;
+}
+@keyframes color-shifft {
+  0%{
+   color: rgb(0, 0, 0);
+  }
+}
+h1{
+  margin-top: 50px;
+  text-align: center;
+
+  animation-name: color-shift, scale ;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s, ;
+  animation-timing-function: ease-in-out;
+}
+@keyframes color-shift {
+  0%{
+   color: rgb(255, 251, 0);
+  }
+  50% {
+    color: rgb(243, 0, 0);
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(1);
+  }
+  50% {
+  transform: rotate(90deg);
+  }
+  75% {
+  transform: rotate(1);
+  }
+}
+img {
+  position: absolute;
+  top: 120%;
+  left: 100%;
+  margin-left: 60px;
+  margin-top: 50px;
 }
